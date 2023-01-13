@@ -1,0 +1,26 @@
+
+spring:
+    datasource:
+        url: jdbc:sqlserver://172.20.7.81:1433;database=test
+        username: sa
+        password: uec23997652!
+        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+        database-platform: org.hibernate.dialect.SQLServer2012Dialect
+        show-sql: true
+    application:
+        name: system
+    servlet:
+        multipart:
+            max-file-size: 10MB
+            max-request-size: 10MB
+
+server:
+    servlet:
+        encoding:
+            force: true
+            charset: UTF-8
+            enable: true
+    port: 8088
+
+#org.hibernate.type.descriptor.sql: trace
