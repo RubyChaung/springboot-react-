@@ -40,7 +40,7 @@ public class EmployeeService {
     } //getAllEmployeeList
 
     public ResponseEntity<String> addEmployee(EmployeeModel model) throws Exception{
-        logger.info("addEmployee 新增員工");
+        logger.info("addEmployee 新增員工 ="+model);
         Employee entity = new Employee();
         entity.setCreateTime(Timestamp.valueOf(LocalDateTime.now()));
         entity.setFirstName(model.getFirstName());

@@ -12,7 +12,6 @@ public class EmployeeModel {
 
     private Timestamp editTime;
 
-    @NotBlank
     private String firstName;
     private String lastName;
 

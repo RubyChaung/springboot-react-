@@ -23,7 +23,7 @@ public class EmployeeController {
     } //getAllEmployees
 
     @PostMapping("/employee")
-    public ResponseEntity<String> addEmployee(@RequestBody @Valid EmployeeModel model) throws Exception{
+    public ResponseEntity<String> addEmployee(@RequestBody EmployeeModel model) throws Exception{
         return employeeService.addEmployee(model);
     }//addEmployee
 
